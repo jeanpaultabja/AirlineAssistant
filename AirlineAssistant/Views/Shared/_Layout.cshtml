@@ -6,6 +6,19 @@
     <title>@ViewData["Title"] - AirlineAssistant</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "e5b6f515-e75e-407a-b087-221c0bfe5812", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "28ebfdd3-d49f-46fd-a97c-3b36eccf565d", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+            document.head.appendChild(t);
+        });
+    </script>
 </head>
 <body>
     <header>
