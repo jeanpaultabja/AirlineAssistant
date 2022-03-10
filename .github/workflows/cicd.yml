@@ -26,4 +26,4 @@ jobs:
           context: .
           file: ./AirlineAssistant/Dockerfile
           push: true
-          tags: jptabja/airlineassistant:v2  # Please change the username here
+          tags: jptabja/airlineassistant:v3  # Please change the username here
